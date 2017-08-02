@@ -1,0 +1,263 @@
+html, body {
+  font-size: 18px;
+  line-height: 1.4;
+  font-family: Helvetica;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+h2 {
+  font-size: 1rem;
+}
+.upper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("/Users/Enor/Desktop/codecademy--Project/T-Optical/resources/image/glasses-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 30rem;
+}
+.float {
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  width: 1032px;
+  justify-content: center;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  font-size: 1rem;
+  background-color: cadetblue;
+  color: white;
+  margin-top: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  width: 960px;
+}
+.header .logo {
+  display: flex;
+  align-items: center;
+  padding-left: 2rem;
+}
+.header .logo img {
+  height: 1.5rem;
+  padding-right: 1rem;
+}
+.header .nav {
+  display: flex;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  float:right;
+}
+.header .nav span {
+  display:none;
+}
+.header .nav ul li {
+  display: inline;
+  padding: 0rem 2rem;
+  list-style-type: none;
+}
+.textbox {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 10rem;
+  width: 100%;
+}
+.textbox p {
+  background-color: white;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.2;
+  padding: 1.5rem 5rem;
+  text-align: center;
+}
+.middle {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 960px;
+}
+.function {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.block {
+  display: flex;
+  flex-direction: column;
+  height: 8rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  justify-content: flex-start;
+  align-items: center;
+}
+.block h2 {
+  text-align: center;
+}
+.exams img {
+  width: 3.5rem;
+}
+.fittings img{
+  width: 5rem;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  padding-bottom: 1.75rem;
+}
+.delivery img {
+  width: 5rem;
+  padding-bottom: 1.25rem;
+}
+.info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+.info .block {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  text-align: left;
+  align-items: flex-start;
+  padding-right: 5%;
+  margin-bottom: 5rem;
+}
+.info .block h2 {
+  background-color: cadetblue;
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem 1.25rem;
+  width: 10rem;
+  margin-bottom: 0;
+}
+.info .block p {
+  margin-top: 0;
+  padding-top: 1rem;
+}
+.lower {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  }
+.footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: azure;
+  width: 1032px;
+}
+.footer img {
+  height: 1.5rem;
+  padding: 4rem 1rem 4rem 4rem;
+}
+
+@media only screen and (max-width: 960px) {
+  .upper {
+    width: 100%;
+    height: 22rem;
+  }
+  .float {
+    width: 100%;
+  }
+  .header {
+    margin-top: 0;
+    width: 100%;
+  }
+  .textbox {
+    width: 100%;
+    margin-right: 2rem;
+    margin-top: 5rem;
+    justify-content: flex-end;
+  }
+  .textbox p {
+    padding: 0.75rem 4rem;
+    font-size: 1.33rem;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .content {
+    width: 100%;
+  }
+  .header {
+    width: 100%;
+    margin-top: 0;
+  }
+  .header .nav span {
+    display: block;
+  }
+  .header .nav ul {
+    display: none;
+  }
+  .upper {
+    background-position: 20%;
+    height: 17rem;
+  }
+  .float {
+    width: 100%;
+  }
+  .textbox {
+    width: 100%;
+    padding-top: 9rem;
+
+  }
+  .textbox p {
+    font-size: 1rem;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .middle {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .detail {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .function {
+    flex-direction: column;
+  }
+  .exams {
+    padding-top: 0rem;
+    margin-top: 3.77rem;
+  }
+  .delivery {
+    padding-bottom: 0rem;
+    margin-bottom: 3.77;
+  }
+  .function .block h2 {
+    font-size: 0.77rem;
+    padding-bottom: 1.54rem;
+  }
+  .info {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .block {
+    margin-bottom: 4rem;
+  }
+  .block p {
+    padding-top: 1rem;
+    font-size: 0.77rem;
+  }
+  .footer p {
+    display: none;
+  }
+  .footer {
+    justify-content: center;
+  }
+}
